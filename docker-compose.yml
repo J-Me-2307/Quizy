@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: quizy_db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: Init1234
+      POSTGRES_DB: quizy
+
